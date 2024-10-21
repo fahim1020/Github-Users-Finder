@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bee8ff;
+}
+
+#title {
+  text-align: center;
+  font-size: 5rem;
+  font-family: math;
+  margin-top: 2rem;
+  color: black;
+}
+@media (max-width: 320px) {
+  #title {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  #title {
+    font-size: 2rem;
+  }
+}
+
+#sub-title {
+  text-align: center;
+  font-size: 1rem;
+  font-family: math;
+}
+
+#search-field {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+#search-field #form {
+  height: 2.5rem;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  #search-field #form {
+    height: 3rem;
+    width: 70%;
+  }
+}
+@media (max-width: 480px) {
+  #search-field #form {
+    width: 90%;
+    margin: 0;
+    padding: 3px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  #search-field #form {
+    height: 2rem;
+    width: 90%;
+    font-size: 0.5rem;
+  }
+}
+#search-field #form #user {
+  height: 100%;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+#search-field #form #user:focus {
+  outline: 2px solid #3b69ff;
+}
+#search-field #form #search {
+  cursor: pointer;
+  background-color: rgb(55, 168, 255);
+  border: 1px solid black;
+  border-radius: 4px;
+  transition-duration: 300ms;
+  padding: 5px;
+  margin: 0 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+#search-field #form #search:hover {
+  background-color: rgb(13, 115, 193);
+}
+
+.card {
+  width: 200px;
+  height: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px auto;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+.followers {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.profile-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.profile-link:hover {
+  background-color: #155bb5;
+}
+
+#all-users {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  width: 90%;
+  margin: 2rem auto;
+}
+@media (max-width: 768px) {
+  #all-users {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  #all-users {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: fit-content;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

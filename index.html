@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scss And TypeScript | Project 1</title>
+    <link rel="stylesheet" href="./style/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animio.css@1.1.1/dist/Animio.css"
+    />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 id="title" class="fade-in-slow">
+      Github Users Finder | Developed by Istiak Rahman
+    </h1>
+    <p id="sub-title" class="slide-in-right">
+      Find and explore GitHub profiles easily
+    </p>
+    <div id="search-field">
+      <div id="form">
+        <input
+          type="text"
+          placeholder="Search User..."
+          id="user"
+          class="slide-in-left"
+          autocomplete="off"
+        />
+        <button type="button" id="search" class="rotate-360">Search</button>
+      </div>
+    </div>
+    <div id="error-box"></div>
+    <div id="all-users"></div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
